@@ -297,6 +297,49 @@ label {
     padding: 3px 2px 0 10px;
 }
 
+.btn-advanced-search {
+    background: #16a085;
+    color: white;
+    border-radius: 0;
+}
+
+
+/* =facets
+ ****************************************/
+
+.facets-main-heading {
+    margin: 0 !important;
+    color: #B7422F;
+    font-size: 1.5em;
+    font-weight: 100 !important;
+    text-transform: uppercase;
+}
+
+.facets {
+    background: orange;
+}
+
+.facets-heading {
+
+}
+
+.facets-list {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.facets-list-item {
+
+}
+
+.facets-more-item-link {
+
+}
+
+
+
+
+
 @media (max-width: 768px) {
 
     #main-advanced-search {
@@ -311,4 +354,9 @@ label {
     .advanced-search-third-row {
         margin-bottom: 20px;
     }
+
+    #results {
+        margin-top: 700px;
+    }
+
 }
