@@ -52,11 +52,18 @@
 <div id="main-advanced-search">
 
     <div class="container">
+
+        <!-- advanced search heading -->
+        <div class="row">
+            <div class="container" id="advanced-search-heading">
+                <h3 class="col-md-4 col-md-offset-4">Erweiterte Suche</h3>
+            </div>
+        </div>
+
         <!-- row for advanced search block -->
         <!-- TODO change caret color -->
         <div class="row">
-            <div class="col-md-12 search-panel" id="onb-simple-search-form">
-
+            <div class="col-md-10 col-md-offset-1 search-panel" id="onb-simple-search-form">
 
                 <!-- first row for filtering; contains 2 select boxes and 1 input field -->
                 <div class="row advanced-search-first-row">
@@ -156,52 +163,72 @@
                     </div>
                 </div><!-- /row -->
 
-
+                <!-- row for different filter -->
                 <div class="row" id="advanced-search-select-block-lower">
 
-                    <div class="col-md-6">
-                        <div class="advanced-search-select-block">
-                            <select name="select-medium" id="select-medium" class="form-control select-block">
-                                <option value="">Alle Medien</option>
-                                <option value="">Artikel</option>
-                                <option value="">Mikroformen</option>
-                                <option value="">Zeitschriften/Zeitungen</option>
-                                <option value="">Bücher</option>
-                                <option value="">Tonträger</option>
-                                <option value="">Karten und Globen</option>
-                                <option value="">Musikdrucke</option>
-                            </select>
-                        </div>
+                    <div class="col-md-5">
 
-                        <div class="advanced-search-select-block">
-                            <select name="select-lang" id="select-lang" class="form-control select-block">
-                                <option value="">Sprachen</option>
-                                <option value="">Artikel</option>
-                                <option value="">Mikroformen</option>
-                                <option value="">Zeitschriften/Zeitungen</option>
-                                <option value="">Bücher</option>
-                                <option value="">Tonträger</option>
-                                <option value="">Karten und Globen</option>
-                                <option value="">Musikdrucke</option>
-                            </select>
-                        </div>
+                        <!-- row for selecting media -->
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="select-medium">Medien</label>
+                            </div>
+                            <div class="advanced-search-select-block col-md-8">
+                                <select name="select-medium" id="select-medium" class="form-control select-block">
+                                    <option value="">Alle Medien</option>
+                                    <option value="">Artikel</option>
+                                    <option value="">Mikroformen</option>
+                                    <option value="">Zeitschriften/Zeitungen</option>
+                                    <option value="">Bücher</option>
+                                    <option value="">Tonträger</option>
+                                    <option value="">Karten und Globen</option>
+                                    <option value="">Musikdrucke</option>
+                                </select>
+                            </div>
+                        </div><!-- /row -->
 
-                        <div class="advanced-search-select-block">
-                            <select name="select-one" id="select-search" class="form-control select-block">
-                                <option value="">Suchbereich</option>
-                                <option value="">Artikel</option>
-                                <option value="">Mikroformen</option>
-                                <option value="">Zeitschriften/Zeitungen</option>
-                                <option value="">Bücher</option>
-                                <option value="">Tonträger</option>
-                                <option value="">Karten und Globen</option>
-                                <option value="">Musikdrucke</option>
-                            </select>
-                        </div>
+                        <!-- row for selecting languages -->
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="select-lang">Sprache</label>
+                            </div>
+                            <div class="advanced-search-select-block col-md-8">
+                                <select name="select-medium" id="select-lang" class="form-control select-block">
+                                    <option value="">Alle Medien</option>
+                                    <option value="">Artikel</option>
+                                    <option value="">Mikroformen</option>
+                                    <option value="">Zeitschriften/Zeitungen</option>
+                                    <option value="">Bücher</option>
+                                    <option value="">Tonträger</option>
+                                    <option value="">Karten und Globen</option>
+                                    <option value="">Musikdrucke</option>
+                                </select>
+                            </div>
+                        </div><!-- /row -->
+
+                        <!-- row for selecting search scope-->
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="select-searchscope">Suchbereich</label>
+                            </div>
+                            <div class="advanced-search-select-block col-md-8">
+                                <select name="select-medium" id="select-searchscope" class="form-control select-block">
+                                    <option value="">Alle Medien</option>
+                                    <option value="">Artikel</option>
+                                    <option value="">Mikroformen</option>
+                                    <option value="">Zeitschriften/Zeitungen</option>
+                                    <option value="">Bücher</option>
+                                    <option value="">Tonträger</option>
+                                    <option value="">Karten und Globen</option>
+                                    <option value="">Musikdrucke</option>
+                                </select>
+                            </div>
+                        </div><!-- /row -->
+
                     </div>
 
                     <!-- column for date filter -->
-                    <div class="col-md-6">
+                    <div class="col-md-7">
 
                         <!-- row for filtering beginning date  -->
                         <div class="row">
@@ -340,9 +367,7 @@
 
                 </div><!-- /row -->
 
-
-
-
+                <!-- buttons -->
                 <div class="row text-center btn-group" id="onb-btn-group">
                     <button class="btn btn-color-onb"><a href="index.html">Normale Suche</a></button>
                     <button class="btn btn-color-onb">Suche</button>
@@ -351,11 +376,10 @@
         </div>
         <!-- /row -->
     </div>
-
-
 </div>
 <!-- end of main container -->
 
+<!-- footer -->
 <footer id="footer" class="hidden-sm hidden-xs">
     <nav class="navbar navbar-default navbar-fixed-bottom">
         <div class="container">
