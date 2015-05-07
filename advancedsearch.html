@@ -50,6 +50,7 @@
 
 <!-- main container -->
 <div id="main-advanced-search">
+
     <div class="container">
         <!-- row for advanced search block -->
         <!-- TODO change caret color -->
@@ -153,187 +154,194 @@
                     <div class="col-md-6">
                         <input type="text" class="form-control advanced-search-input" placeholder="Suchanfrage">
                     </div>
-                </div>
-                <!-- /row -->
+                </div><!-- /row -->
+
 
                 <div class="row" id="advanced-search-select-block-lower">
-                    <div class="col-md-1">
-                        <label for="select-medium" id="label-medium">Medientyp</label>
-                    </div>
-                    <div class="advanced-search-select-block col-md-3">
-                        <select name="select-medium" id="select-medium" class="form-control select-block">
-                            <option value="">Alle Medien</option>
-                            <option value="">Artikel</option>
-                            <option value="">Mikroformen</option>
-                            <option value="">Zeitschriften/Zeitungen</option>
-                            <option value="">Bücher</option>
-                            <option value="">Tonträger</option>
-                            <option value="">Karten und Globen</option>
-                            <option value="">Musikdrucke</option>
-                        </select>
-                    </div>
-                    <div class="col-md-2">
-                        <label for="select-first-date-day" id="label-first-date">Anfangsdatum</label>
-                    </div>
-                    <div class="advanced-search-select-block col-md-2">
-                        <select name="select-first-date-day" id="select-first-date-day"
-                                class="form-control select-block">
-                            <option value="">Tag</option>
-                            <option value="">01</option>
-                            <option value="">02</option>
-                            <option value="">03</option>
-                            <option value="">04</option>
-                            <option value="">05</option>
-                            <option value="">06</option>
-                            <option value="">07</option>
-                            <option value="">08</option>
-                            <option value="">09</option>
-                            <option value="">10</option>
-                            <option value="">11</option>
-                            <option value="">12</option>
-                            <option value="">13</option>
-                            <option value="">14</option>
-                            <option value="">15</option>
-                            <option value="">16</option>
-                            <option value="">17</option>
-                            <option value="">18</option>
-                            <option value="">19</option>
-                            <option value="">20</option>
-                            <option value="">21</option>
-                            <option value="">22</option>
-                            <option value="">23</option>
-                            <option value="">24</option>
-                            <option value="">25</option>
-                            <option value="">26</option>
-                            <option value="">27</option>
-                            <option value="">28</option>
-                            <option value="">29</option>
-                            <option value="">30</option>
-                            <option value="">31</option>
 
-                        </select>
-                    </div>
-                    <div class="advanced-search-select-block col-md-2">
-                        <select name="select-one" id="select-first-date-month" class="form-control select-block">
-                            <option value="">Monat</option>
-                            <option value="">01</option>
-                            <option value="">02</option>
-                            <option value="">03</option>
-                            <option value="">04</option>
-                            <option value="">05</option>
-                            <option value="">06</option>
-                            <option value="">07</option>
-                            <option value="">08</option>
-                            <option value="">09</option>
-                            <option value="">10</option>
-                            <option value="">11</option>
-                            <option value="">12</option>
+                    <div class="col-md-6">
+                        <div class="advanced-search-select-block">
+                            <select name="select-medium" id="select-medium" class="form-control select-block">
+                                <option value="">Alle Medien</option>
+                                <option value="">Artikel</option>
+                                <option value="">Mikroformen</option>
+                                <option value="">Zeitschriften/Zeitungen</option>
+                                <option value="">Bücher</option>
+                                <option value="">Tonträger</option>
+                                <option value="">Karten und Globen</option>
+                                <option value="">Musikdrucke</option>
+                            </select>
+                        </div>
 
-                        </select>
-                    </div>
-                    <div class="advanced-search-select-block col-md-2">
-                        <input type="text" class="form-control advanced-search-input" placeholder="Jahr">
-                    </div>
-                </div>
-                <!-- /row -->
+                        <div class="advanced-search-select-block">
+                            <select name="select-lang" id="select-lang" class="form-control select-block">
+                                <option value="">Sprachen</option>
+                                <option value="">Artikel</option>
+                                <option value="">Mikroformen</option>
+                                <option value="">Zeitschriften/Zeitungen</option>
+                                <option value="">Bücher</option>
+                                <option value="">Tonträger</option>
+                                <option value="">Karten und Globen</option>
+                                <option value="">Musikdrucke</option>
+                            </select>
+                        </div>
 
-                <div class="row">
-                    <div class="col-md-1">
-                        <label for="select-lang" id="label-lang">Sprachen</label>
+                        <div class="advanced-search-select-block">
+                            <select name="select-one" id="select-search" class="form-control select-block">
+                                <option value="">Suchbereich</option>
+                                <option value="">Artikel</option>
+                                <option value="">Mikroformen</option>
+                                <option value="">Zeitschriften/Zeitungen</option>
+                                <option value="">Bücher</option>
+                                <option value="">Tonträger</option>
+                                <option value="">Karten und Globen</option>
+                                <option value="">Musikdrucke</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="advanced-search-select-block col-md-3">
-                        <select name="select-lang" id="select-lang" class="form-control select-block">
-                            <option value="">Alle Medien</option>
-                            <option value="">Artikel</option>
-                            <option value="">Mikroformen</option>
-                            <option value="">Zeitschriften/Zeitungen</option>
-                            <option value="">Bücher</option>
-                            <option value="">Tonträger</option>
-                            <option value="">Karten und Globen</option>
-                            <option value="">Musikdrucke</option>
-                        </select>
-                    </div>
-                    <div class="col-md-2">
-                        <label for="select-last-day" id="label-last-date">Enddatum</label>
-                    </div>
-                    <div class="advanced-search-select-block col-md-2">
-                        <select name="select-one" id="select-last-day" class="form-control select-block">
-                            <option value="">Tag</option>
-                            <option value="">01</option>
-                            <option value="">02</option>
-                            <option value="">03</option>
-                            <option value="">04</option>
-                            <option value="">05</option>
-                            <option value="">06</option>
-                            <option value="">07</option>
-                            <option value="">08</option>
-                            <option value="">09</option>
-                            <option value="">10</option>
-                            <option value="">11</option>
-                            <option value="">12</option>
-                            <option value="">13</option>
-                            <option value="">14</option>
-                            <option value="">15</option>
-                            <option value="">16</option>
-                            <option value="">17</option>
-                            <option value="">18</option>
-                            <option value="">19</option>
-                            <option value="">20</option>
-                            <option value="">21</option>
-                            <option value="">22</option>
-                            <option value="">23</option>
-                            <option value="">24</option>
-                            <option value="">25</option>
-                            <option value="">26</option>
-                            <option value="">27</option>
-                            <option value="">28</option>
-                            <option value="">29</option>
-                            <option value="">30</option>
-                            <option value="">31</option>
 
-                        </select>
-                    </div>
-                    <div class="advanced-search-select-block col-md-2">
-                        <select name="select-one" id="select-last-month" class="form-control select-block">
-                            <option value="">Monat</option>
-                            <option value="">01</option>
-                            <option value="">02</option>
-                            <option value="">03</option>
-                            <option value="">04</option>
-                            <option value="">05</option>
-                            <option value="">06</option>
-                            <option value="">07</option>
-                            <option value="">08</option>
-                            <option value="">09</option>
-                            <option value="">10</option>
-                            <option value="">11</option>
-                            <option value="">12</option>
-                        </select>
-                    </div>
-                    <div class="advanced-search-select-block col-md-2">
-                        <input type="text" class="form-control advanced-search-input" placeholder="Jahr">
-                    </div>
-                </div>
-                <!-- /row -->
+                    <!-- column for date filter -->
+                    <div class="col-md-6">
 
-                <div class="row">
-                    <div class="col-md-1">
-                        <label for="select-search" id="label-search">Suchbereich</label>
-                    </div>
-                    <div class="advanced-search-select-block col-md-3">
-                        <select name="select-one" id="select-search" class="form-control select-block">
-                            <option value="">Alle Medien</option>
-                            <option value="">Artikel</option>
-                            <option value="">Mikroformen</option>
-                            <option value="">Zeitschriften/Zeitungen</option>
-                            <option value="">Bücher</option>
-                            <option value="">Tonträger</option>
-                            <option value="">Karten und Globen</option>
-                            <option value="">Musikdrucke</option>
-                        </select>
-                    </div>
-                </div>
-                <!-- /row -->
+                        <!-- row for filtering beginning date  -->
+                        <div class="row">
+
+                            <div class="col-md-3">
+                                <label for="select-first-date-day" id="label-first-date">Anfangsdatum</label>
+                            </div>
+                            <div class="advanced-search-select-block col-md-3">
+                                <select name="select-first-date-day" id="select-first-date-day" class="form-control select-block">
+                                    <option value="">Tag</option>
+                                    <option value="">01</option>
+                                    <option value="">02</option>
+                                    <option value="">03</option>
+                                    <option value="">04</option>
+                                    <option value="">05</option>
+                                    <option value="">06</option>
+                                    <option value="">07</option>
+                                    <option value="">08</option>
+                                    <option value="">09</option>
+                                    <option value="">10</option>
+                                    <option value="">11</option>
+                                    <option value="">12</option>
+                                    <option value="">13</option>
+                                    <option value="">14</option>
+                                    <option value="">15</option>
+                                    <option value="">16</option>
+                                    <option value="">17</option>
+                                    <option value="">18</option>
+                                    <option value="">19</option>
+                                    <option value="">20</option>
+                                    <option value="">21</option>
+                                    <option value="">22</option>
+                                    <option value="">23</option>
+                                    <option value="">24</option>
+                                    <option value="">25</option>
+                                    <option value="">26</option>
+                                    <option value="">27</option>
+                                    <option value="">28</option>
+                                    <option value="">29</option>
+                                    <option value="">30</option>
+                                    <option value="">31</option>
+
+                                </select>
+                            </div>
+                            <div class="advanced-search-select-block col-md-3">
+                                <select name="select-one" id="select-first-date-month" class="form-control select-block">
+                                    <option value="">Monat</option>
+                                    <option value="">01</option>
+                                    <option value="">02</option>
+                                    <option value="">03</option>
+                                    <option value="">04</option>
+                                    <option value="">05</option>
+                                    <option value="">06</option>
+                                    <option value="">07</option>
+                                    <option value="">08</option>
+                                    <option value="">09</option>
+                                    <option value="">10</option>
+                                    <option value="">11</option>
+                                    <option value="">12</option>
+
+                                </select>
+                            </div>
+                            <div class="advanced-search-select-block col-md-3">
+                                <input type="text" class="form-control advanced-search-input" placeholder="Jahr">
+                            </div>
+
+                        </div><!-- /row -->
+
+                        <!-- row for filtering end date -->
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="select-first-date-day" id="label-last-date">Enddatum</label>
+                            </div>
+                            <div class="advanced-search-select-block col-md-3">
+                                <select name="select-first-date-day" id="select-last-date-day" class="form-control select-block">
+                                    <option value="">Tag</option>
+                                    <option value="">01</option>
+                                    <option value="">02</option>
+                                    <option value="">03</option>
+                                    <option value="">04</option>
+                                    <option value="">05</option>
+                                    <option value="">06</option>
+                                    <option value="">07</option>
+                                    <option value="">08</option>
+                                    <option value="">09</option>
+                                    <option value="">10</option>
+                                    <option value="">11</option>
+                                    <option value="">12</option>
+                                    <option value="">13</option>
+                                    <option value="">14</option>
+                                    <option value="">15</option>
+                                    <option value="">16</option>
+                                    <option value="">17</option>
+                                    <option value="">18</option>
+                                    <option value="">19</option>
+                                    <option value="">20</option>
+                                    <option value="">21</option>
+                                    <option value="">22</option>
+                                    <option value="">23</option>
+                                    <option value="">24</option>
+                                    <option value="">25</option>
+                                    <option value="">26</option>
+                                    <option value="">27</option>
+                                    <option value="">28</option>
+                                    <option value="">29</option>
+                                    <option value="">30</option>
+                                    <option value="">31</option>
+
+                                </select>
+                            </div>
+                            <div class="advanced-search-select-block col-md-3">
+                                <select name="select-one" id="select-last-date-month" class="form-control select-block">
+                                    <option value="">Monat</option>
+                                    <option value="">01</option>
+                                    <option value="">02</option>
+                                    <option value="">03</option>
+                                    <option value="">04</option>
+                                    <option value="">05</option>
+                                    <option value="">06</option>
+                                    <option value="">07</option>
+                                    <option value="">08</option>
+                                    <option value="">09</option>
+                                    <option value="">10</option>
+                                    <option value="">11</option>
+                                    <option value="">12</option>
+
+                                </select>
+                            </div>
+                            <div class="advanced-search-select-block col-md-3">
+                                <input type="text" class="form-control advanced-search-input" placeholder="Jahr">
+                            </div>
+
+                        </div><!-- /row -->
+
+                    </div><!-- /column for date filter -->
+
+                </div><!-- /row -->
+
+
+
 
                 <div class="row text-center btn-group" id="onb-btn-group">
                     <button class="btn btn-color-onb"><a href="index.html">Normale Suche</a></button>
@@ -371,7 +379,6 @@
 <!-- TODO add function for loading older jQuery in older browser -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
 
 <script src="js/bootstrap.js"></script>
 

@@ -1,4 +1,3 @@
-
 /*
  * bootstrap - typeahead bugfixes
  */
@@ -47,15 +46,10 @@ body {
  * fullwidth header section with background image
  */
 #quicksearch-header {
-    /* TODO blur affects heading */
-    /* TODO ie support */
-    -webkit-filter: blur(0px);
-        filter: blur(0px);
     margin-top: 50px;
     min-height: 500px;
     background-repeat: no-repeat;
     background-size: cover !important;
-    background-color: #B7422F;
 }
 
 #quicksearch-header h3 {
@@ -280,10 +274,24 @@ select:focus {
 }
 
 #advanced-search-select-block-lower {
-    margin-top: 20px;
+    margin-top: 2em;
+}
+
+label {
+    border: 2px solid white !important;
+    width: 100%;
+    padding: 3px 2px 0 10px;
 }
 
 @media (max-width: 768px) {
+
+    #main-advanced-search {
+        background: rgba(183,66,47,1) !important;
+    }
+
+    /**********************************
+     * =advanced search xs
+     **********************************/
     .advanced-search-first-row,
     .advanced-search-second-row,
     .advanced-search-third-row {
