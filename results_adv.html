@@ -7,6 +7,7 @@
 
     <!-- include stylesheets -->
     <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css"/>
 
 </head>
@@ -20,9 +21,7 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
                         aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <i class="fa fa-2x fa-bars"></i>
                 </button>
                 <!-- link to onb.ac.at -->
                 <a class="navbar-brand" href="#">
@@ -379,7 +378,7 @@
     <div class="container" id="results">
 
         <!-- section for facets -->
-        <section class="col-md-3">
+        <section class="col-md-3 hidden-xs">
             <h4 class="facets-main-heading">Ergebnisse filtern</h4>
 
             <!-- facets -->
@@ -485,7 +484,8 @@
 
 
         <!-- results -->
-        <section class="col-md-9" id="results-list">
+        <section class="col-xs-12 col-md-9" id="results-list">
+            <!-- TODO div results-header is not set correct -->
             <div class="results-header">
                 <div class="row">
                     <div class="col-md-9">
@@ -495,9 +495,11 @@
                         sortiert nach: <a href="#">Relevanz</a>
                     </div>
                 </div>
-                <div class="row">
-                    <nav class="col-md-12 text-center">
-                        <ul class="pagination pagination-sm">
+
+                <!-- pagination row -->
+                <div class="row result-pagination">
+                    <nav class="col-md-12 text-center result-pagination">
+                        <ul class="pagination pagination-sm result-pagination">
                             <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
                             <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
                             <li><a href="#">2</a></li>
@@ -512,12 +514,22 @@
                             <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
                         </ul>
                     </nav>
+                </div><!-- /row -->
+
+                <!-- row to show set filter -->
+                <div class="row" id="result-show-filter">
+                    <div class="col-md-12">
+                        Filter: <span class="badge badge-filter">Medium: Buch</span>
+                                <span class="badge badge-filter">Person/Institution: Historisches Museum der Stadt Wien</span>
+                    </div>
                 </div>
 
+                <!-- row for showing result set -->
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="table-responsive">
+
                             <table class="table">
+                                <!-- hidden tablehead -->
                                 <thead style="display: none">
                                     <tr>
                                         <td>Result Number</td>
@@ -527,12 +539,15 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+
+                                    <!-- table row that stores one result -->
                                     <tr id="exlidResult0">
                                         <!-- stores number of result in the whole resultset -->
                                         <td class="result-number">1</td>
                                         <!-- stores thumbnail and material of the result -->
                                         <td class="result-thumb">
                                             <img src="img/icon_book.png" alt=""/>
+                                            <h6>Buch</h6>
                                         </td>
                                         <!-- checkbox schelf -->
                                         <td class="result-shelf">
@@ -543,21 +558,393 @@
                                             <div>
                                                 <div>
                                                     <h4>
-                                                        <a href="#">[Test Berlin ]. Test : Zeitschrift der Stiftung Warentest</a>
+                                                        <a href="#">Wien : 1870 - 1930 ; Traum und Wirklichkeit</a>
                                                     </h4>
-                                                    <h5>Berlin ;1966 - [Erscheinungsverlauf: 1.1966 - 28.1993; 1994 -]</h5>
+                                                    <h5>
+                                                        Waissenberger, Robert, [Hrsg.] ;Historisches Museum der Stadt Wien
+                                                        <br />
+                                                        Salzburg ; Wien : Residenz Verl. ;1984
+                                                    </h5>
                                                     <p>
-                                                        <em>Verfügbar in: ÖNB Hauptabt. Heldenplatz</em>
+                                                        <span class="badge badge-available">Verfügbar</span> ÖNB Hauptabt. Heldenplatz (mehrere Standorte)
                                                     </p>
+                                                    <div>
+                                                        <a href="#">Bestellen</a>
+                                                        <a href="#">Standorte</a>
+                                                        <a href="#">Details</a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </td>
-                                    </tr>
+                                    </tr><!-- /tr -->
+
+                                    <!-- table row that stores one result -->
+                                    <tr id="exlidResult1">
+                                        <!-- stores number of result in the whole resultset -->
+                                        <td class="result-number">1</td>
+                                        <!-- stores thumbnail and material of the result -->
+                                        <td class="result-thumb">
+                                            <img src="img/icon_book.png" alt=""/>
+                                            <h6>Buch</h6>
+                                        </td>
+                                        <!-- checkbox schelf -->
+                                        <td class="result-shelf">
+                                            <input type="checkbox">
+                                        </td>
+                                        <!-- stores summary of result -->
+                                        <td class="result-summary">
+                                            <div>
+                                                <div>
+                                                    <h4>
+                                                        <a href="#">Das rote Wien : 1918 - 1934 ; Historisches Museum der Stadt Wien, 17. 6. - 5. 9. 1993</a>
+                                                    </h4>
+                                                    <h5>
+                                                        Öhlinger, Walter, [Red.] ;Historisches Museum der Stadt Wien
+                                                        <br />
+                                                        Wien : Eigenverl. d. Museen d. Stadt Wien ;1993
+                                                    </h5>
+                                                    <p>
+                                                        <span class="badge badge-borrowed">Entlehnt</span>
+                                                    </p>
+                                                    <div>
+                                                        <a href="#">Bestellen</a>
+                                                        <a href="#">Standorte</a>
+                                                        <a href="#">Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr><!-- /tr -->
+
+                                    <!-- table row that stores one result -->
+                                    <tr id="exlidResult2">
+                                        <!-- stores number of result in the whole resultset -->
+                                        <td class="result-number">1</td>
+                                        <!-- stores thumbnail and material of the result -->
+                                        <td class="result-thumb">
+                                            <img src="img/icon_book.png" alt=""/>
+                                            <h6>Buch</h6>
+                                        </td>
+                                        <!-- checkbox schelf -->
+                                        <td class="result-shelf">
+                                            <input type="checkbox">
+                                        </td>
+                                        <!-- stores summary of result -->
+                                        <td class="result-summary">
+                                            <div>
+                                                <div>
+                                                    <h4>
+                                                        <a href="#">Wien im Mittelalter : 41. Sonderausstellung des Historischen Museums der Stadt Wien, Karlsplatz ; 18. Dezember 1975 bis 18. April 1976</a>
+                                                    </h4>
+                                                    <h5>
+                                                        Historisches Museum der Stadt Wien ;Bisanz, Hans, [Bearb.]
+                                                        <br />
+                                                        Wien : Eigenverl. der Museen der Stadt Wien ;[1975]
+                                                    </h5>
+                                                    <p>
+                                                        <span class="badge badge-check">Prüfen Sie die Verfügbarkeit</span>
+                                                    </p>
+                                                    <div>
+                                                        <a href="#">Bestellen</a>
+                                                        <a href="#">Standorte</a>
+                                                        <a href="#">Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr><!-- /tr -->
+
+                                    <!-- table row that stores one result -->
+                                    <tr id="exlidResult3">
+                                        <!-- stores number of result in the whole resultset -->
+                                        <td class="result-number">4</td>
+                                        <!-- stores thumbnail and material of the result -->
+                                        <td class="result-thumb">
+                                            <img src="img/icon_book.png" alt=""/>
+                                            <h6>Buch</h6>
+                                        </td>
+                                        <!-- checkbox schelf -->
+                                        <td class="result-shelf">
+                                            <input type="checkbox">
+                                        </td>
+                                        <!-- stores summary of result -->
+                                        <td class="result-summary">
+                                            <div>
+                                                <div>
+                                                    <h4>
+                                                        <a href="#">Das barocke Wien : Stadtbild und Straßenleben ; Sonderausstellung Juni - September 1966</a>
+                                                    </h4>
+                                                    <h5>
+                                                        Historisches Museum der Stadt Wien
+                                                        <br />
+                                                        Wien : Eigenverl. ;1966
+                                                    </h5>
+                                                    <p>
+                                                        <span class="badge badge-available">Verfügbar</span> ÖNB Hauptabt. Heldenplatz (mehrere Standorte)
+                                                    </p>
+                                                    <div>
+                                                        <a href="#">Bestellen</a>
+                                                        <a href="#">Standorte</a>
+                                                        <a href="#">Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr><!-- /tr -->
+
+                                    <!-- table row that stores one result -->
+                                    <tr id="exlidResult4">
+                                        <!-- stores number of result in the whole resultset -->
+                                        <td class="result-number">5</td>
+                                        <!-- stores thumbnail and material of the result -->
+                                        <td class="result-thumb">
+                                            <img src="img/icon_book.png" alt=""/>
+                                            <h6>Buch</h6>
+                                        </td>
+                                        <!-- checkbox schelf -->
+                                        <td class="result-shelf">
+                                            <input type="checkbox">
+                                        </td>
+                                        <!-- stores summary of result -->
+                                        <td class="result-summary">
+                                            <div>
+                                                <div>
+                                                    <h4>
+                                                        <a href="#">Klassizismus in Wien : Architektur und Plastik ; 15. Juni bis 1. Oktober 1978</a>
+                                                    </h4>
+                                                    <h5>
+                                                        Erben, Tino ;Historisches Museum der Stadt Wien
+                                                        <br />
+                                                        Wien : Eigenverl. d. Museen d. Stadt Wien ;1978
+                                                    </h5>
+                                                    <p>
+                                                        <span class="badge badge-available">Verfügbar</span> ÖNB Hauptabt. Heldenplatz (mehrere Standorte)
+                                                    </p>
+                                                    <div>
+                                                        <a href="#">Bestellen</a>
+                                                        <a href="#">Standorte</a>
+                                                        <a href="#">Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr><!-- /tr -->
+
+                                    <!-- table row that stores one result -->
+                                    <tr id="exlidResult5">
+                                            <!-- stores number of result in the whole resultset -->
+                                            <td class="result-number">6</td>
+                                            <!-- stores thumbnail and material of the result -->
+                                            <td class="result-thumb">
+                                                <img src="img/icon_book.png" alt=""/>
+                                                <h6>Buch</h6>
+                                            </td>
+                                            <!-- checkbox schelf -->
+                                            <td class="result-shelf">
+                                                <input type="checkbox">
+                                            </td>
+                                            <!-- stores summary of result -->
+                                            <td class="result-summary">
+                                                <div>
+                                                    <div>
+                                                        <h4>
+                                                            <a href="#">Josephinische Pfarrgründungen in Wien : 22. Februar bis 9. Juni 1985</a>
+                                                        </h4>
+                                                        <h5>
+                                                            Albrecht-Weinberger, Karl ;Historisches Museum der Stadt Wien
+                                                            <br />
+                                                            Wien : Eigenverl. d. Museen d. Stadt Wien ;1985
+                                                        </h5>
+                                                        <p>
+                                                            <span class="badge badge-available">Verfügbar</span> ÖNB Hauptabt. Heldenplatz (mehrere Standorte)
+                                                        </p>
+                                                        <div>
+                                                            <a href="#">Bestellen</a>
+                                                            <a href="#">Standorte</a>
+                                                            <a href="#">Details</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr><!-- /tr -->
+
+                                    <!-- table row that stores one result -->
+                                    <tr id="exlidResult6">
+                                        <!-- stores number of result in the whole resultset -->
+                                        <td class="result-number">7</td>
+                                        <!-- stores thumbnail and material of the result -->
+                                        <td class="result-thumb">
+                                            <img src="img/icon_book.png" alt=""/>
+                                            <h6>Buch</h6>
+                                        </td>
+                                        <!-- checkbox schelf -->
+                                        <td class="result-shelf">
+                                            <input type="checkbox">
+                                        </td>
+                                        <!-- stores summary of result -->
+                                        <td class="result-summary">
+                                            <div>
+                                                <div>
+                                                    <h4>
+                                                        <a href="#">Schausammlung - Historisches Museum der Stadt Wien</a>
+                                                    </h4>
+                                                    <h5>
+                                                        Waissenberger, Robert, [Bearb.] ;Historisches Museum der Stadt Wien
+                                                        <br />
+                                                        Wien : Eigenverl. d. Museen d. Stadt Wien ;1984
+                                                    </h5>
+                                                    <p>
+                                                        <span class="badge badge-check">Prüfen Sie die Verfügbarkeit</span>
+                                                    </p>
+                                                    <div>
+                                                        <a href="#">Bestellen</a>
+                                                        <a href="#">Standorte</a>
+                                                        <a href="#">Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr><!-- /tr -->
+
+                                    <!-- table row that stores one result -->
+                                    <tr id="exlidResult7">
+                                        <!-- stores number of result in the whole resultset -->
+                                        <td class="result-number">8</td>
+                                        <!-- stores thumbnail and material of the result -->
+                                        <td class="result-thumb">
+                                            <img src="img/icon_book.png" alt=""/>
+                                            <h6>Buch</h6>
+                                        </td>
+                                        <!-- checkbox schelf -->
+                                        <td class="result-shelf">
+                                            <input type="checkbox">
+                                        </td>
+                                        <!-- stores summary of result -->
+                                        <td class="result-summary">
+                                            <div>
+                                                <div>
+                                                    <h4>
+                                                        <a href="#">Frauenleben 1945 : Kriegsende in Wien ; Sonderausstellung des Historischen Museums der Stadt Wien, 21. September - 19. November 1995</a>
+                                                    </h4>
+                                                    <h5>
+                                                        Eppel, Peter, [Red.] ;Historisches Museum der Stadt Wien
+                                                        <br />
+                                                        Wien : Eigenverl. d. Museen d. Stadt Wien ;[1995]
+                                                    </h5>
+                                                    <p>
+                                                        <span class="badge badge-available">Verfügbar</span> ÖNB Hauptabt. Heldenplatz (mehrere Standorte)
+                                                    </p>
+                                                    <div>
+                                                        <a href="#">Bestellen</a>
+                                                        <a href="#">Standorte</a>
+                                                        <a href="#">Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr><!-- /tr -->
+
+                                    <!-- table row that stores one result -->
+                                    <tr id="exlidResult8">
+                                        <!-- stores number of result in the whole resultset -->
+                                        <td class="result-number">9</td>
+                                        <!-- stores thumbnail and material of the result -->
+                                        <td class="result-thumb">
+                                            <img src="img/icon_book.png" alt=""/>
+                                            <h6>Buch</h6>
+                                        </td>
+                                        <!-- checkbox schelf -->
+                                        <td class="result-shelf">
+                                            <input type="checkbox">
+                                        </td>
+                                        <!-- stores summary of result -->
+                                        <td class="result-summary">
+                                            <div>
+                                                <div>
+                                                    <h4>
+                                                        <a href="#">Angeli : [1. April bis 30. Mai 1993 ; Historisches Museum der Stadt Wien]</a>
+                                                    </h4>
+                                                    <h5>
+                                                        Angeli, Eduard, [Ill.] ;Historisches Museum der Stadt Wien
+                                                        <br />
+                                                        Wien : Eigenverl. d. Museen d. Stadt Wien ;1993
+                                                    </h5>
+                                                    <p>
+                                                        <span class="badge badge-available">Verfügbar</span> ÖNB Hauptabt. Heldenplatz (mehrere Standorte)
+                                                    </p>
+                                                    <div>
+                                                        <a href="#">Bestellen</a>
+                                                        <a href="#">Standorte</a>
+                                                        <a href="#">Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr><!-- /tr -->
+
+                                    <!-- table row that stores one result -->
+                                    <tr id="exlidResult9">
+                                        <!-- stores number of result in the whole resultset -->
+                                        <td class="result-number">10</td>
+                                        <!-- stores thumbnail and material of the result -->
+                                        <td class="result-thumb">
+                                            <img src="img/icon_book.png" alt=""/>
+                                            <h6>Buch</h6>
+                                        </td>
+                                        <!-- checkbox schelf -->
+                                        <td class="result-shelf">
+                                            <input type="checkbox">
+                                        </td>
+                                        <!-- stores summary of result -->
+                                        <td class="result-summary">
+                                            <div>
+                                                <div>
+                                                    <h4>
+                                                        <a href="#">Kraft-Flächen : Wiener Plakatkunst um 1900 ; [Historisches Museum der Stadt Wien, 10. Juli - 21. September 2003]</a>
+                                                    </h4>
+                                                    <h5>
+                                                        Storch, Ursula, [Hrsg.] ;Historisches Museum der Stadt Wien
+                                                        <br />
+                                                        Wien : Museen d. Stadt Wien ;2003
+                                                    </h5>
+                                                    <p>
+                                                        <span class="badge badge-available">Verfügbar</span> ÖNB Hauptabt. Heldenplatz (mehrere Standorte)
+                                                    </p>
+                                                    <div>
+                                                        <a href="#">Bestellen</a>
+                                                        <a href="#">Standorte</a>
+                                                        <a href="#">Details</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr><!-- /tr -->
+
                                 </tbody>
                             </table>
-                        </div>
+
                     </div>
-                </div>
+                </div><!-- /row -->
+
+                <!-- pagination row -->
+                <div class="row result-pagination">
+                    <nav class="col-md-12 text-center result-pagination">
+                        <ul class="pagination pagination-sm result-pagination">
+                            <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>
+                            <li><a href="#">9</a></li>
+                            <li><a href="#">10</a></li>
+                            <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                        </ul>
+                    </nav>
+                </div><!-- /row -->
 
             </div>
 

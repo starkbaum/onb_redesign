@@ -19,6 +19,9 @@ span.twitter-typeahead {
 }
 
 
+/* ==general styling
+ ****************************************/
+
 body {
     padding-top: 50px;
     font-family: Tahoma, Arial, Helvetica, sans-serif;
@@ -53,9 +56,19 @@ a:hover {
     color: #B7422F;
 }
 
-/**
- * fullwidth header section with background image
- */
+/* ==navbar
+ ****************************************/
+
+.navbar {
+    background: #ecf0f1;
+    min-height: 100px;
+    /*box-shadow: 0 1px 1px black;*/
+}
+
+
+/* ==full width header
+ ****************************************/
+
 #quicksearch-header {
     margin-top: 50px;
     min-height: 500px;
@@ -86,9 +99,8 @@ a:hover {
     color: white;
 }
 
-/**********************************
- * =buttons
- **********************************/
+/* ==buttons
+ ****************************************/
 
 .btn-color-onb {
     background: #B7422F !important;
@@ -103,9 +115,8 @@ button a:visited{
     color: #ecf0f1;
 }
 
-/**********************************
- * =simple search mask
- **********************************/
+/* ==search mask
+ ****************************************/
 
 /* changing default input style */
 input,
@@ -131,9 +142,8 @@ input[type]:focus {
     margin-top: 1em;
 }
 
-/**********************************
- * =dropdown menu
- **********************************/
+/* ==dropdown
+ ****************************************/
 
 .menu-large {
     position: static !important;
@@ -190,10 +200,8 @@ input[type]:focus {
     }
 }
 
-
-/**********************************
- * =suggestions
- **********************************/
+/* ==suggestions
+ ****************************************/
 
 .tt-menu {
     width: 100%;
@@ -233,18 +241,9 @@ input[type]:focus {
     font-size: 14px;
 }
 
-/**********************************
- * =footer
- **********************************/
 
-.footer-img {
-    margin-top: -42px;
-}
-
-
-/**********************************
- * =testing placeholder
- **********************************/
+/* ==placeholder
+ ****************************************/
 
 ::-webkit-input-placeholder {
  font-size: 13px;
@@ -267,9 +266,8 @@ input[type]:focus {
  font-weight: 500;
 }
 
-/**********************************
- * =advanced search
- **********************************/
+/* ==advanced search
+ ****************************************/
 
 .select-block {
     margin-bottom: 5px;
@@ -329,6 +327,7 @@ label {
 .facets {
     border-bottom: 2px solid #B7422F;
     margin-top: 2em;
+    margin-right: 3em; !important;
 }
 
 .facets-heading {
@@ -358,7 +357,7 @@ label {
     font-weight: 100;
 }
 
-/* =results
+/* ==results
  ****************************************/
 
 .results-header-heading {
@@ -378,6 +377,39 @@ label {
 
 #results-list {
     /*TODO*/
+}
+
+/*TODO correct styling*/
+.result-pagination {
+    height: 50px !important;
+    line-height: 1em !important;
+    margin: 0;
+    padding: 5px 15px 5px 15px ;
+}
+
+#result-show-filter {
+    padding-bottom: 5px;
+}
+
+.badge {
+    font-size: 0.8em;
+    font-weight: 100;
+}
+
+.badge-available {
+    background: #27ae60;
+}
+
+.badge-borrowed {
+    background: #34495e;
+}
+
+.badge-check {
+    background: #f39c12;
+}
+
+.badge-filter {
+    background: #3498db;
 }
 
 @media (max-width: 768px) {
