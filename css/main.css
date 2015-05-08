@@ -327,10 +327,12 @@ label {
 }
 
 .facets {
+    border-bottom: 2px solid #B7422F;
+    margin-top: 2em;
 }
 
 .facets-heading {
-
+    /*TODO*/
 }
 
 .facets-list {
@@ -339,19 +341,21 @@ label {
 }
 
 .facets-list-item {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .facets-list-item > a .badge {
     background: #B7422F;
     color: white;
     margin: -1em 0.5em 0 0.5em !important;
-    font-size: x-small;
+    font-size: 10px;
+    font-weight: 100;
 }
 
 .facets-list-item > small {
     color: #B7422F;
-    font-size: x-small;
+    font-size: 10px;
+    font-weight: 100;
 }
 
 /* =results
@@ -369,6 +373,11 @@ label {
 .pagination > .active > a {
     background: white !important;
     color: black;
+}
+
+
+#results-list {
+    /*TODO*/
 }
 
 @media (max-width: 768px) {
