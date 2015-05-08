@@ -42,6 +42,17 @@ body {
     color: white;
 }
 
+/* ==typography
+ ****************************************/
+
+a {
+    color: #B7422F;
+}
+
+a:hover {
+    color: #B7422F;
+}
+
 /**
  * fullwidth header section with background image
  */
@@ -304,7 +315,7 @@ label {
 }
 
 
-/* =facets
+/* ==facets
  ****************************************/
 
 .facets-main-heading {
@@ -316,7 +327,6 @@ label {
 }
 
 .facets {
-    background: orange;
 }
 
 .facets-heading {
@@ -329,16 +339,37 @@ label {
 }
 
 .facets-list-item {
-
+    font-size: 16px;
 }
 
-.facets-more-item-link {
-
+.facets-list-item > a .badge {
+    background: #B7422F;
+    color: white;
+    margin: -1em 0.5em 0 0.5em !important;
+    font-size: x-small;
 }
 
+.facets-list-item > small {
+    color: #B7422F;
+    font-size: x-small;
+}
 
+/* =results
+ ****************************************/
 
+.results-header-heading {
+    margin: 0 !important;
+}
 
+.pagination > li > a {
+    color: #B7422F;
+    border: 0 !important;
+}
+
+.pagination > .active > a {
+    background: white !important;
+    color: black;
+}
 
 @media (max-width: 768px) {
 
