@@ -13,8 +13,8 @@
 </head>
 <body>
 
-<!-- navbar that is fixed to top -->
-<nav class="navbar navbar-fixed-top">
+<!-- navbar fixed to top -->
+<nav class="navbar navbar-fixed-top" id="navbar-top">
     <div class="container">
         <div class="navbar-header">
             <!-- TODO fix bug collapse-->
@@ -25,12 +25,12 @@
             </button>
             <!-- link to onb.ac.at -->
             <a class="navbar-brand" href="#">
-                <img alt="Brand" src="img/onb_logo.png" class="hidden-xs">
+                <img alt="Brand" src="img/onb_logo.png" class="">
             </a>
         </div>
         <!--- links for userauth -->
         <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right" id="user-auth">
                 <li><a href="#">e-Shelf</a></li>
                 <li><a href="#">Mein Konto</a></li>
                 <li><a href="#">Anmelden</a></li>
@@ -39,15 +39,12 @@
         <!-- end of collapse navbar -->
     </div>
 </nav>
-<!-- end of navbar -->
+<!-- /navbar -->
 
 
 <!-- heading -->
 <!--TODO other styling, maybe picture of header -->
 <div class="jumbotron" id="quicksearch-header">
-    <div class="container">
-        <h3 class="col-md-4 col-md-offset-4">QuickSearch</h3>
-    </div>
 </div>
 
 <!-- main container -->
@@ -55,6 +52,13 @@
 
     <!-- row for filter button, searchform, submit button -->
     <div class="row">
+
+        <div class="row">
+            <div class="container" id="advanced-search-heading">
+                <h3 class="col-md-4 col-md-offset-4">Erweiterte Suche</h3>
+            </div>
+        </div>
+
         <div class="col-md-8 col-md-offset-2 search-panel" id="onb-simple-search-form">
             <div class="menu-large">
 
