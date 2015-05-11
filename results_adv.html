@@ -14,7 +14,7 @@
 <body>
 
     <!-- navbar that is fixed to top -->
-    <nav class="navbar navbar-fixed-top">
+    <nav class="navbar navbar-fixed-top" id="navbar-top">
         <div class="container">
             <div class="navbar-header">
                 <!-- TODO fix bug collapse-->
@@ -25,7 +25,7 @@
                 </button>
                 <!-- link to onb.ac.at -->
                 <a class="navbar-brand" href="#">
-                    <img alt="Brand" src="img/onb_logo.png" class="hidden-xs">
+                    <img alt="Brand" src="img/onb_logo.png" class="">
                 </a>
             </div>
             <!--- links for userauth -->
@@ -496,7 +496,7 @@
                     </div>
                 </div>
 
-                <!-- pagination row -->
+                <!-- pagination top -->
                 <div class="row result-pagination">
                     <nav class="col-md-12 text-center result-pagination">
                         <ul class="pagination pagination-sm result-pagination">
@@ -518,6 +518,7 @@
 
                 <!-- row to show set filter -->
                 <div class="row" id="result-show-filter">
+
                     <div class="col-md-12">
                         Filter: <span class="badge badge-filter">Medium: Buch</span>
                                 <span class="badge badge-filter">Person/Institution: Historisches Museum der Stadt Wien</span>
@@ -527,7 +528,6 @@
                 <!-- row for showing result set -->
                 <div class="row">
                     <div class="col-md-12">
-
                             <table class="table">
                                 <!-- hidden tablehead -->
                                 <thead style="display: none">
@@ -545,12 +545,12 @@
                                         <!-- stores number of result in the whole resultset -->
                                         <td class="result-number">1</td>
                                         <!-- stores thumbnail and material of the result -->
-                                        <td class="result-thumb">
+                                        <td class="result-thumb hidden-xs">
                                             <img src="img/icon_book.png" alt=""/>
                                             <h6>Buch</h6>
                                         </td>
                                         <!-- checkbox schelf -->
-                                        <td class="result-shelf">
+                                        <td class="result-shelf hidden-xs">
                                             <input type="checkbox">
                                         </td>
                                         <!-- stores summary of result -->
@@ -581,14 +581,14 @@
                                     <!-- table row that stores one result -->
                                     <tr id="exlidResult1">
                                         <!-- stores number of result in the whole resultset -->
-                                        <td class="result-number">1</td>
+                                        <td class="result-number">2</td>
                                         <!-- stores thumbnail and material of the result -->
-                                        <td class="result-thumb">
+                                        <td class="result-thumb hidden-xs">
                                             <img src="img/icon_book.png" alt=""/>
                                             <h6>Buch</h6>
                                         </td>
                                         <!-- checkbox schelf -->
-                                        <td class="result-shelf">
+                                        <td class="result-shelf hidden-xs">
                                             <input type="checkbox">
                                         </td>
                                         <!-- stores summary of result -->
@@ -619,14 +619,14 @@
                                     <!-- table row that stores one result -->
                                     <tr id="exlidResult2">
                                         <!-- stores number of result in the whole resultset -->
-                                        <td class="result-number">1</td>
+                                        <td class="result-number">3</td>
                                         <!-- stores thumbnail and material of the result -->
-                                        <td class="result-thumb">
+                                        <td class="result-thumb hidden-xs">
                                             <img src="img/icon_book.png" alt=""/>
                                             <h6>Buch</h6>
                                         </td>
                                         <!-- checkbox schelf -->
-                                        <td class="result-shelf">
+                                        <td class="result-shelf hidden-xs">
                                             <input type="checkbox">
                                         </td>
                                         <!-- stores summary of result -->
@@ -659,12 +659,12 @@
                                         <!-- stores number of result in the whole resultset -->
                                         <td class="result-number">4</td>
                                         <!-- stores thumbnail and material of the result -->
-                                        <td class="result-thumb">
+                                        <td class="result-thumb hidden-xs">
                                             <img src="img/icon_book.png" alt=""/>
                                             <h6>Buch</h6>
                                         </td>
                                         <!-- checkbox schelf -->
-                                        <td class="result-shelf">
+                                        <td class="result-shelf hidden-xs">
                                             <input type="checkbox">
                                         </td>
                                         <!-- stores summary of result -->
@@ -697,12 +697,12 @@
                                         <!-- stores number of result in the whole resultset -->
                                         <td class="result-number">5</td>
                                         <!-- stores thumbnail and material of the result -->
-                                        <td class="result-thumb">
+                                        <td class="result-thumb hidden-xs">
                                             <img src="img/icon_book.png" alt=""/>
                                             <h6>Buch</h6>
                                         </td>
                                         <!-- checkbox schelf -->
-                                        <td class="result-shelf">
+                                        <td class="result-shelf hidden-xs">
                                             <input type="checkbox">
                                         </td>
                                         <!-- stores summary of result -->
@@ -735,12 +735,12 @@
                                             <!-- stores number of result in the whole resultset -->
                                             <td class="result-number">6</td>
                                             <!-- stores thumbnail and material of the result -->
-                                            <td class="result-thumb">
+                                            <td class="result-thumb hidden-xs">
                                                 <img src="img/icon_book.png" alt=""/>
                                                 <h6>Buch</h6>
                                             </td>
                                             <!-- checkbox schelf -->
-                                            <td class="result-shelf">
+                                            <td class="result-shelf hidden-xs">
                                                 <input type="checkbox">
                                             </td>
                                             <!-- stores summary of result -->
@@ -773,12 +773,12 @@
                                         <!-- stores number of result in the whole resultset -->
                                         <td class="result-number">7</td>
                                         <!-- stores thumbnail and material of the result -->
-                                        <td class="result-thumb">
+                                        <td class="result-thumb hidden-xs">
                                             <img src="img/icon_book.png" alt=""/>
                                             <h6>Buch</h6>
                                         </td>
                                         <!-- checkbox schelf -->
-                                        <td class="result-shelf">
+                                        <td class="result-shelf hidden-xs">
                                             <input type="checkbox">
                                         </td>
                                         <!-- stores summary of result -->
@@ -811,12 +811,12 @@
                                         <!-- stores number of result in the whole resultset -->
                                         <td class="result-number">8</td>
                                         <!-- stores thumbnail and material of the result -->
-                                        <td class="result-thumb">
+                                        <td class="result-thumb hidden-xs">
                                             <img src="img/icon_book.png" alt=""/>
                                             <h6>Buch</h6>
                                         </td>
                                         <!-- checkbox schelf -->
-                                        <td class="result-shelf">
+                                        <td class="result-shelf hidden-xs">
                                             <input type="checkbox">
                                         </td>
                                         <!-- stores summary of result -->
@@ -849,12 +849,12 @@
                                         <!-- stores number of result in the whole resultset -->
                                         <td class="result-number">9</td>
                                         <!-- stores thumbnail and material of the result -->
-                                        <td class="result-thumb">
+                                        <td class="result-thumb hidden-xs">
                                             <img src="img/icon_book.png" alt=""/>
                                             <h6>Buch</h6>
                                         </td>
                                         <!-- checkbox schelf -->
-                                        <td class="result-shelf">
+                                        <td class="result-shelf hidden-xs">
                                             <input type="checkbox">
                                         </td>
                                         <!-- stores summary of result -->
@@ -887,12 +887,12 @@
                                         <!-- stores number of result in the whole resultset -->
                                         <td class="result-number">10</td>
                                         <!-- stores thumbnail and material of the result -->
-                                        <td class="result-thumb">
+                                        <td class="result-thumb hidden-xs">
                                             <img src="img/icon_book.png" alt=""/>
                                             <h6>Buch</h6>
                                         </td>
                                         <!-- checkbox schelf -->
-                                        <td class="result-shelf">
+                                        <td class="result-shelf hidden-xs">
                                             <input type="checkbox">
                                         </td>
                                         <!-- stores summary of result -->
@@ -922,11 +922,10 @@
 
                                 </tbody>
                             </table>
-
                     </div>
                 </div><!-- /row -->
 
-                <!-- pagination row -->
+                <!-- pagination bottom -->
                 <div class="row result-pagination">
                     <nav class="col-md-12 text-center result-pagination">
                         <ul class="pagination pagination-sm result-pagination">
@@ -951,9 +950,6 @@
         </section>
     </div>
 
-
-
-    <!-- footer
     <footer id="footer" class="hidden-sm hidden-xs">
         <nav class="navbar navbar-default navbar-static-bottom">
             <div class="container">
@@ -970,7 +966,7 @@
                 </ul>
             </div>
         </nav>
-    </footer>-->
+    </footer>
 
     <!-- include scripts -->
     <!-- TODO add jQuery locally -->
@@ -1012,7 +1008,6 @@
         });
 
     </script>
-
 
 </body>
 </html>
