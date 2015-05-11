@@ -382,6 +382,24 @@ label {
     /*TODO*/
 }
 
+/*TODO .result-padding-top instead of three identical classes
+    .result-*
+*/
+.result-number {
+    color: #5e5e5e !important;
+    padding-top: 18px !important;
+}
+.result-thumb {
+    padding-top: 18px !important;
+}
+.result-shelf {
+    padding-top: 18px !important;
+}
+
+.result-summary h5 {
+    line-height: 1.3em;
+}
+
 /*TODO correct styling*/
 .result-pagination {
     height: 50px !important;
@@ -393,6 +411,9 @@ label {
 #result-show-filter {
     padding-bottom: 5px;
 }
+
+
+/* bagdes for status and filters */
 
 .badge {
     font-size: 0.8em;
@@ -432,6 +453,10 @@ label {
 
     #results {
         margin-top: 700px;
+    }
+
+    .badge {
+        width: 100% !important;
     }
 
 }
