@@ -65,6 +65,9 @@ a:hover {
     /*box-shadow: 0 1px 1px black;*/
 }
 
+#user-auth {
+    padding-top: 1em;
+}
 
 /* ==full width header
  ****************************************/

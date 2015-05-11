@@ -12,8 +12,7 @@
 
 </head>
 <body>
-
-    <!-- navbar that is fixed to top -->
+    <!-- navbar fixed to top -->
     <nav class="navbar navbar-fixed-top" id="navbar-top">
         <div class="container">
             <div class="navbar-header">
@@ -30,7 +29,7 @@
             </div>
             <!--- links for userauth -->
             <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right" id="user-auth">
                     <li><a href="#">e-Shelf</a></li>
                     <li><a href="#">Mein Konto</a></li>
                     <li><a href="#">Anmelden</a></li>
@@ -39,26 +38,20 @@
             <!-- end of collapse navbar -->
         </div>
     </nav>
-    <!-- end of navbar -->
-
-
-    <!-- heading -->
+    <!-- /navbar -->
+    <!-- hero unit container -->
     <!--TODO other styling, animated gifs as background -->
     <div class="jumbotron" id="quicksearch-header">
     </div>
-
     <!-- search container -->
     <div id="main-advanced-search">
-
         <div class="container">
-
             <!-- advanced search heading -->
             <div class="row">
                 <div class="container" id="advanced-search-heading">
                     <h3 class="col-md-4 col-md-offset-4">Erweiterte Suche</h3>
                 </div>
             </div>
-
             <!-- row for advanced search block -->
             <!-- TODO change caret color -->
             <div class="row">
@@ -372,11 +365,9 @@
             <!-- /row -->
         </div>
     </div>
-    <!-- end of search container -->
-
-    <!-- section for results and facets -->
+    <!-- /search container -->
+    <!-- results and facets section -->
     <div class="container" id="results">
-
         <!-- section for facets -->
         <section class="col-md-3 hidden-xs">
             <h4 class="facets-main-heading">Ergebnisse filtern</h4>
@@ -481,8 +472,6 @@
             </div>
 
         </section>
-
-
         <!-- results -->
         <section class="col-xs-12 col-md-9" id="results-list">
             <!-- TODO div results-header is not set correct -->
@@ -528,6 +517,7 @@
                 <!-- row for showing result set -->
                 <div class="row">
                     <div class="col-md-12">
+                            <!-- results table -->
                             <table class="table">
                                 <!-- hidden tablehead -->
                                 <thead style="display: none">
@@ -557,9 +547,7 @@
                                         <td class="result-summary">
                                             <div>
                                                 <div>
-                                                    <h4>
-                                                        <a href="#">Wien : 1870 - 1930 ; Traum und Wirklichkeit</a>
-                                                    </h4>
+                                                    <h4><a href="#">Wien : 1870 - 1930 ; Traum und Wirklichkeit</a></h4>
                                                     <h5>
                                                         Waissenberger, Robert, [Hrsg.] ;Historisches Museum der Stadt Wien
                                                         <br />
@@ -568,7 +556,7 @@
                                                     <p>
                                                         <span class="badge badge-available">Verfügbar</span> ÖNB Hauptabt. Heldenplatz (mehrere Standorte)
                                                     </p>
-                                                    <div>
+                                                    <div class="hidden-xs">
                                                         <a href="#">Bestellen</a>
                                                         <a href="#">Standorte</a>
                                                         <a href="#">Details</a>
@@ -606,7 +594,7 @@
                                                     <p>
                                                         <span class="badge badge-borrowed">Entlehnt</span>
                                                     </p>
-                                                    <div>
+                                                    <div class="hidden-xs">
                                                         <a href="#">Bestellen</a>
                                                         <a href="#">Standorte</a>
                                                         <a href="#">Details</a>
@@ -644,7 +632,7 @@
                                                     <p>
                                                         <span class="badge badge-check">Prüfen Sie die Verfügbarkeit</span>
                                                     </p>
-                                                    <div>
+                                                    <div class="hidden-xs">
                                                         <a href="#">Bestellen</a>
                                                         <a href="#">Standorte</a>
                                                         <a href="#">Details</a>
@@ -682,7 +670,7 @@
                                                     <p>
                                                         <span class="badge badge-available">Verfügbar</span> ÖNB Hauptabt. Heldenplatz (mehrere Standorte)
                                                     </p>
-                                                    <div>
+                                                    <div class="hidden-xs">
                                                         <a href="#">Bestellen</a>
                                                         <a href="#">Standorte</a>
                                                         <a href="#">Details</a>
@@ -720,7 +708,7 @@
                                                     <p>
                                                         <span class="badge badge-available">Verfügbar</span> ÖNB Hauptabt. Heldenplatz (mehrere Standorte)
                                                     </p>
-                                                    <div>
+                                                    <div class="hidden-xs">
                                                         <a href="#">Bestellen</a>
                                                         <a href="#">Standorte</a>
                                                         <a href="#">Details</a>
@@ -758,7 +746,7 @@
                                                         <p>
                                                             <span class="badge badge-available">Verfügbar</span> ÖNB Hauptabt. Heldenplatz (mehrere Standorte)
                                                         </p>
-                                                        <div>
+                                                        <div class="hidden-xs">
                                                             <a href="#">Bestellen</a>
                                                             <a href="#">Standorte</a>
                                                             <a href="#">Details</a>
@@ -796,7 +784,7 @@
                                                     <p>
                                                         <span class="badge badge-check">Prüfen Sie die Verfügbarkeit</span>
                                                     </p>
-                                                    <div>
+                                                    <div class="hidden-xs">
                                                         <a href="#">Bestellen</a>
                                                         <a href="#">Standorte</a>
                                                         <a href="#">Details</a>
@@ -834,7 +822,7 @@
                                                     <p>
                                                         <span class="badge badge-available">Verfügbar</span> ÖNB Hauptabt. Heldenplatz (mehrere Standorte)
                                                     </p>
-                                                    <div>
+                                                    <div class="hidden-xs">
                                                         <a href="#">Bestellen</a>
                                                         <a href="#">Standorte</a>
                                                         <a href="#">Details</a>
@@ -872,7 +860,7 @@
                                                     <p>
                                                         <span class="badge badge-available">Verfügbar</span> ÖNB Hauptabt. Heldenplatz (mehrere Standorte)
                                                     </p>
-                                                    <div>
+                                                    <div class="hidden-xs">
                                                         <a href="#">Bestellen</a>
                                                         <a href="#">Standorte</a>
                                                         <a href="#">Details</a>
@@ -910,7 +898,7 @@
                                                     <p>
                                                         <span class="badge badge-available">Verfügbar</span> ÖNB Hauptabt. Heldenplatz (mehrere Standorte)
                                                     </p>
-                                                    <div>
+                                                    <div class="hidden-xs">
                                                         <a href="#">Bestellen</a>
                                                         <a href="#">Standorte</a>
                                                         <a href="#">Details</a>
@@ -921,9 +909,9 @@
                                     </tr><!-- /tr -->
 
                                 </tbody>
-                            </table>
+                            </table><!-- /results table -->
                     </div>
-                </div><!-- /row -->
+                </div><!-- /row --><!-- /results-header -->
 
                 <!-- pagination bottom -->
                 <div class="row result-pagination">
@@ -944,12 +932,12 @@
                         </ul>
                     </nav>
                 </div><!-- /row -->
-
             </div>
-
         </section>
     </div>
-
+    <!-- /results and facets section -->
+    <!-- footer -->
+    <!-- TODO fix padding/margin to bottom -->
     <footer id="footer" class="hidden-sm hidden-xs">
         <nav class="navbar navbar-default navbar-static-bottom">
             <div class="container">
@@ -967,15 +955,11 @@
             </div>
         </nav>
     </footer>
-
     <!-- include scripts -->
     <!-- TODO add jQuery locally -->
     <!-- TODO add function for loading older jQuery in older browser -->
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
     <script src="js/bootstrap.js"></script>
-
     <!-- script for changing hero unit background picture -->
     <script type="text/javascript">
 
@@ -1008,6 +992,5 @@
         });
 
     </script>
-
 </body>
 </html>
