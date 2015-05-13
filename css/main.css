@@ -436,6 +436,23 @@ label {
     background: #3498db;
 }
 
+/* ==footer
+ ****************************************/
+
+footer .navbar {
+    margin: 0;
+    border: 0;
+    border-radius: 0 !important;
+}
+
+footer .navbar-brand {
+    position: absolute;
+    bottom: 40px;
+}
+
+/* ==media queries
+ ****************************************/
+
 @media (max-width: 768px) {
 
     #main-advanced-search {
