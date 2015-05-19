@@ -76,6 +76,7 @@ a:hover {
     margin-top: 50px;
     min-height: 500px;
     background-repeat: no-repeat;
+    background-position: center center !important;
     background-size: cover !important;
 }
 
